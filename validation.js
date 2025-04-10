@@ -24,6 +24,6 @@ function validateForm(event) {
         return false;
     }
 
-    alert("Form submitted successfully!");
+    alert("Form is successfully submitted!");
     return true;
 }
