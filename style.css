@@ -8,8 +8,8 @@ body {
 
 
 .content-wrapper {
-  max-width: 1320px; /* Max width of the page */
-  margin: 0 auto; /* Center-align the content */
+  max-width: 1320px; 
+  margin: 0 auto; 
   padding: 0;
 }
 
