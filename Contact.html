@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact Us - Frictional Haven</title>
+<link rel="stylesheet" href="style.css">
+<script>
+function validateForm(event) {
+event.preventDefault();
+
+var name = document.getElementById("name").value;
+var email = document.getElementById("email").value;
+var message = document.getElementById("message").value;
+
+if (name === "") {
+alert("Please enter your name.");
+return false;
+}
+
+var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zAZ]{2,4}$/;
+if (email === "") {
+alert("Please enter your email address.");
+return false;
+} else if (!email.match(emailPattern)) {
+alert("Please enter a valid email address.");
+return false;
+}
+
+if (message === "") {
+alert("Please enter a message.");
+return false;
+}
+
+alert("Form submitted successfully!");
+return true;
+}
+</script>
+</head>
+<body>
+<div class="content-wrapper">
+<header style="background-color: #151715; color: white;">
+<h2 id="discover">DISCOVER ▼</h2>
+<nav>
+<a href="index.html">Home</a>
+<a href="about us.html">About</a>
+<a href="Contact.html">Contact</a>
+<a href="Library.html">Library</a>
+<a href="offers.html">Offers</a>
+</nav>
+</header>
+
+<div class="section">
+<h3>Contact Us</h3>
+<p>If you have any questions, feedback, or just want to say hi, we’d love to hear from you!</p>
+
+<form onsubmit="return validateForm(event)">
+<label for="name">Name </label><br>
+<input type="text" id="name" name="name" required><br><br>
+
+<label for="email">Email</label><br>
+<input type="email" id="email" name="email" required><br><br>
+
+<label for="message">Message</label><br>
+<textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+<button type="submit">Send</button>
+</form>
+</div>
+
+<footer>
+<div>
+<a href="index.html">Library</a> |
+<a href="community.html">Community</a> |
+<a href="company.html">Company</a>
+</div>
+<p>Follow @2025 Advertional Media LLC. All Rights Reserved.</p>
+<p>Frictional Havens, Nepal</p>
+<p> Click in here<b><i><a href="mailto:uayesha24@tbc.edu.np">Email Us</a></i></b>to get in touch with us</p>
+<a href="https://www.wattpad.com/" target="_blank">External Website for exploration</a>
+</footer>
+</div>
+</body>
+</html>
